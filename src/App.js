@@ -6,10 +6,9 @@ import history from './services/history';
 
 function App() {
   return (
-  <Router history={history}>
-    <Routes />
-  </Router>
-
+    <Router history={history}>
+      <Routes />
+    </Router>
   );
 }
 

@@ -1,8 +1,8 @@
-import storage from 'redux-persit/lib/storage';
-import { persitReducer } from 'redux-persit';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer } from 'redux-persist';
 
 export default reducers => {
-  const persitedReducer = persitReducer(
+  const persistedReducer = persistReducer(
     {
       key: 'gobarber',
       storage,
@@ -11,5 +11,5 @@ export default reducers => {
     reducers
   );
 
-  return persitedReducer;
+  return persistedReducer;
 };

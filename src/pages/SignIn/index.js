@@ -31,7 +31,7 @@ export default function SignIn() {
         <Input name="email" type="email" placeholder="e-mail" />
         <Input name="password" type="password" placeholder="Yor password" />
 
-        <button type="submit">{loading ? 'Loading...' : 'Acess'}</button>
+        <button type="submit">{loading ? 'Loading...' : 'Enter'}</button>
         <Link to="/register">Create free accoint</Link>
       </Form>
     </>

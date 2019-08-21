@@ -3,14 +3,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
+
 import { signInRequest } from '~/store/modules/auth/actions';
+
 import logo from '~/assets/logo.svg';
 
 const schema = Yup.object().shape({
   email: Yup.string()
-    .email('email is required')
-    .required('email is require'),
-  password: Yup.string().required('Password is require'),
+    .email('email')
+    .required('Email is require'),
+  password: Yup.string().required('Password require'),
 });
 
 export default function SignIn() {
@@ -20,15 +22,17 @@ export default function SignIn() {
   function handleSubmit({ email, password }) {
     dispatch(signInRequest(email, password));
   }
+
   return (
     <>
-      <img src={logo} alt="Gobarber" />
+      <img src={logo} alt="GoBarber" />
 
       <Form schema={schema} onSubmit={handleSubmit}>
         <Input name="email" type="email" placeholder="e-mail" />
-        <Input name="password" type="password" placeholder="Password" />
-        <button type="submit">{loading ? 'Loadiang...' : 'Login'}</button>
-        <Link to="/register">Create free account</Link>
+        <Input name="password" type="password" placeholder="Yor password" />
+
+        <button type="submit">{loading ? 'Loading...' : 'Acess'}</button>
+        <Link to="/register">Create free accoint</Link>
       </Form>
     </>
   );

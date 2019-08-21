@@ -19,11 +19,34 @@ export function* signIn({ payload }) {
       toast.error('user is not a provider');
       return;
     }
+
     yield put(signInSuccess(token, user));
     history.push('/dashboard');
   } catch (err) {
-    toast.error('Autentication fail, please check your login data');
+    toast.error('Autentication fail, please check your login access');
     yield put(signFailure());
   }
 }
-export default all([takeLatest('@auth/SIGN_IN_REQUEST', signIn)]);
+
+export function* signUp({ payload }) {
+  try {
+    const { name, email, password } = payload;
+    yield call(api.post, 'users', {
+      name,
+      email,
+      password,
+      provider: true,
+    });
+
+    history.push('/');
+  } catch (err) {
+    toast.error('Registration fail, please verify your login access!');
+
+    yield put(signFailure());
+  }
+}
+
+export default all([
+  takeLatest('@auth/SIGN_IN_REQUEST', signIn),
+  takeLatest('@auth/SIGN_UP_REQUEST', signUp),
+]);

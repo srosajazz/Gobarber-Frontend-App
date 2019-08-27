@@ -1,33 +1,7 @@
    <img src="https://s3.us-east-2.amazonaws.com/gobarber-img/logo.svg" height = "150"/>
    
   <img src="https://s3.amazonaws.com/barberimages2/barber/NodeJS.png" height = "80" width = "80" />
-# APP GOBARBER
-- App created with NodeJs BackEnd and ReactJS on Frontend
 
-  
-  ### SCREENSHOTS:
-  - Login View page
-  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-1.png" height = "400" width = "400" />
-
-  -  Select your prefer barber
-  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-2.png" height = "500" width = "400" />
-  
-   - Book Appointment
-  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-3.png" height = "500" width = "400" />
-  
-   - Appointments dates and time.
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-4.png" height = "600" width = "400" />
-  
-   #### Screens of the service provider:
-   
-   - Available times slots
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-5.png" height = "400" width = "400" /> 
-   
-   - Create a account
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-6.png" height = "400" width = "400" /> 
-   
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-7.png" height = "400" width = "400" /> 
-   
    
 ###GOBARBER APP CONTENT
 
@@ -61,3 +35,26 @@
 28.	Dashboard Stylization
 29.	Navigating between days
 30.	Listing Schedules
+- App created with NodeJs BackEnd and ReactJS on Frontend
+
+  
+  ### SCREENSHOTS:
+
+  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-1.png" height = "400" width = "400" />
+
+  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-2.png" height = "500" width = "400" />
+
+  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-3.png" height = "500" width = "400" />
+  
+  
+   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-4.png" height = "600" width = "400" />
+  
+   
+   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-5.png" height = "400" width = "400" /> 
+   
+  
+   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-6.png" height = "400" width = "400" /> 
+   
+   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-7.png" height = "400" width = "400" /> 
+   
+

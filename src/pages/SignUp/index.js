@@ -39,7 +39,7 @@ export default function SignUp() {
         />
 
         <button type="submit">Create free account</button>
-        <Link to="/">Alredy have account</Link>
+        <Link to="/">Already have account</Link>
       </Form>
     </>
   );

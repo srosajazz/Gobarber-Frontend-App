@@ -31,7 +31,7 @@ export default function SignIn() {
         <Input name="password" type="password" placeholder="Your password" />
 
         <button type="submit">{loading ? 'Loading...' : 'Enter'}</button>
-        <Link to="/register">Create free accoint</Link>
+        <Link to="/register">Create free account</Link>
       </Form>
     </>
   );

@@ -3,7 +3,7 @@ import { darken } from 'polished';
 
 export const Wrapper = styled.div`
   height: 100%;
-  background: linear-gradient(-90deg, #5c8a8a, #ecf1f8);
+  background: linear-gradient(-90deg, #b86973, #b35d68);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ export const Content = styled.div`
   button {
     margin: 5px 0 0;
     height: 44px;
-    background: #94b8b8;
+    background: #3498db;
     font-weight: bold;
     color: #fff;
     border: 0;

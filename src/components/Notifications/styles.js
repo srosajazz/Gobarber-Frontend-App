@@ -10,13 +10,13 @@ export const Badge = styled.button`
   background: none;
   border: 0;
   position: relative;
-
   ${props =>
     props.hasUnread &&
     css`
       &::after {
         position: absolute;
         right: 0;
+        top: 0;
         width: 8px;
         height: 8px;
         background: #ff892e;
@@ -24,11 +24,6 @@ export const Badge = styled.button`
         border-radius: 50%;
       }
     `}
-`;
-// ScrollBar
-export const Scroll = styled(PerfectScrollbar)`
-  max-height: 260px;
-  padding: 5px 15px;
 `;
 
 export const NotificationList = styled.div`
@@ -54,37 +49,34 @@ export const NotificationList = styled.div`
   }
 `;
 
+export const Scroll = styled(PerfectScrollbar)`
+  max-height: 260px;
+  padding: 5px 15px;
+`;
+
 export const Notification = styled.div`
   color: #fff;
-
   & + div {
     margin-top: 15px;
     padding-top: 15px;
-    border-top: 20px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-
   p {
     font-size: 13px;
     line-height: 18px;
   }
-
   time {
     display: block;
     font-size: 12px;
     opacity: 0.6;
     margin-bottom: 5px;
   }
-
   button {
     font-size: 12px;
     border: 0;
     background: none;
-    color: ${lighten(0.2, '#ff3300')};
-    padding: 0 5px;
-    margin: 0 5px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    color: ${lighten(0.2, '#7159c1')};
   }
-
   ${props =>
     props.unread &&
     css`
@@ -95,6 +87,7 @@ export const Notification = styled.div`
         height: 8px;
         background: #ff892e;
         border-radius: 50%;
+        margin-left: 10px;
       }
     `}
 `;

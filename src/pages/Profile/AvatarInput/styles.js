@@ -6,11 +6,9 @@ export const Container = styled.div`
 
   label {
     cursor: pointer;
-
     &:hover {
       opacity: 0.7;
     }
-
     img {
       height: 120px;
       width: 120px;

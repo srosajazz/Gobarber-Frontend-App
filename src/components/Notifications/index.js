@@ -72,7 +72,7 @@ export default function Notifications() {
                   type="button"
                   onClick={() => handleMarkAsRead(notification._id)}
                 >
-                  Marcar como lida
+                  Mark as read
                 </button>
               )}
             </Notification>

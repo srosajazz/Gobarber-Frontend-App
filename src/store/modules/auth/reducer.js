@@ -28,6 +28,7 @@ export default function auth(state = INITIAL_STATE, action) {
         draft.signed = false;
         break;
       }
+
       default:
     }
   });

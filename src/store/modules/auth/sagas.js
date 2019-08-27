@@ -18,7 +18,7 @@ export function* signIn({ payload }) {
     const { token, user } = response.data;
 
     if (!user.provider) {
-      toast.error('User is not provider');
+      toast.error('Usuário não é prestador');
       return;
     }
 
@@ -28,7 +28,7 @@ export function* signIn({ payload }) {
 
     history.push('/dashboard');
   } catch (err) {
-    toast.error('Autentication fail, please check your creditials');
+    toast.error('Falha na autenticação, verifique seus dados');
     yield put(signFailure());
   }
 }
@@ -46,7 +46,7 @@ export function* signUp({ payload }) {
 
     history.push('/');
   } catch (err) {
-    toast.error('Registration fail!');
+    toast.error('Falha no cadastro, verifique seus dados!');
 
     yield put(signFailure());
   }
@@ -54,6 +54,7 @@ export function* signUp({ payload }) {
 
 export function setToken({ payload }) {
   if (!payload) return;
+
   const { token } = payload.auth;
 
   if (token) {
@@ -61,8 +62,13 @@ export function setToken({ payload }) {
   }
 }
 
+export function signOut() {
+  history.push('/');
+}
+
 export default all([
   takeLatest('persist/REHYDRATE', setToken),
   takeLatest('@auth/SIGN_IN_REQUEST', signIn),
   takeLatest('@auth/SIGN_UP_REQUEST', signUp),
+  takeLatest('@auth/SIGN_OUT', signOut),
 ]);

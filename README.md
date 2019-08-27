@@ -2,8 +2,9 @@
    
   <img src="https://s3.amazonaws.com/barberimages2/barber/NodeJS.png" height = "80" width = "80" />
 
+- App created with NodeJs BackEnd and ReactJS on Frontend
    
-###GOBARBER APP CONTENT
+##GOBARBER APP CONTENT
 
 1.	Structure configured
 2.	API adjustments
@@ -35,26 +36,8 @@
 28.	Dashboard Stylization
 29.	Navigating between days
 30.	Listing Schedules
-- App created with NodeJs BackEnd and ReactJS on Frontend
 
-  
-  ### SCREENSHOTS:
 
-  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-1.png" height = "400" width = "400" />
 
-  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-2.png" height = "500" width = "400" />
-
-  <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-3.png" height = "500" width = "400" />
-  
-  
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-4.png" height = "600" width = "400" />
-  
-   
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-5.png" height = "400" width = "400" /> 
-   
-  
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-6.png" height = "400" width = "400" /> 
-   
-   <img src="https://barberimages2.s3.amazonaws.com/gobarber+img/img-7.png" height = "400" width = "400" /> 
    
 
